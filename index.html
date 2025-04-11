@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de média</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <script src="./src/script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="text">
+      <h1 class="page-title">Calculadora de média</h1>
+      <h2 class="page-subtitle">Descubra qual a sua média de nota de todas as provas!</h2>
+      <p class="page-text">
+        Informe seu nome e notas do bimestre para saber sua média final. <br>
+        As notas decimais devem ser escritas com ponto.
+      </p>
+    </div>
+
+    <div class="calculator-container">
+      <div class="calculator">
+        <div class="input-container">
+          <input id="nome" type="text" placeholder="Nome" style="display:flex; justify-content: center">
+          <input id="valor1" type="number" placeholder="1º Nota">
+          <input id="valor2" type="number" placeholder="2º Nota">
+          <input id="valor3" type="number" placeholder="3º Nota">
+          <input id="valor4" type="number" placeholder="4º Nota">
+        </div>
+
+        <button id="ok">Calcular</button>
+
+        <p id="result">Resultado</p>
+      </div>
+
+      <div class="error">pop-up de possíveis erros</div>
+    </div>
+
+    <div class="history">
+      <h2>Histórico</h2>
+      <table>Nome, 1ª nota, 2ª nota, 3ª nota, 4ª nota, Média</table>
+    </div>
+
+  </div>
+</body>
+
+</html>

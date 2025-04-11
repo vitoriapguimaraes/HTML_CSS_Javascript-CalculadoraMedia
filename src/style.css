@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: url('./assets/background-img.png') center/cover no-repeat;
+  background-size: cover;
+}
+
+.page-subtitle,
+.page-text {
+  margin-top: 1rem;
+}
+
+.container {
+  text-align: start;
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 1.5rem;
+}
+
+.calculator-container {
+  background-color: rgba(190, 20, 20, 0.397);
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+.calculator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  height: 3rem;
+}
+
+input {
+  border: none;
+  background-color: lightgray;
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+  border-radius: 0.3rem;
+  width: 6rem;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+#nome {
+  width: 10rem;
+}
+
+button {
+  border: none;
+  font-family: 'Roboto Mono', monospace;
+  height: 3rem;
+  width: 6rem;
+  border-radius: 0.3rem;
+  background-color: yellow;
+}
+
+#result {
+  width: 10rem;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3rem;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  color: yellow;
+  padding-bottom: 1rem;
+}
+
+.history {
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: rgba(128, 128, 128, 0.445);
+  border-radius: 1rem;
+}
