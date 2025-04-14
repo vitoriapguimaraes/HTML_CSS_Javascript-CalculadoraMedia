@@ -16,7 +16,8 @@
       <p class="page-text">
         Informe seu nome e notas do bimestre para saber sua média final. <br>
         Use ponto no lugar da vírgula para notas decimais.<br>
-        Não se preocupe se tiver feito menos de 4 provas; a média será calculada com base apenas nas notas que você informar.
+        Não se preocupe se tiver feito menos de 4 provas; a média será calculada com base apenas nas notas que você
+        informar.
       </p>
     </div>
 
@@ -41,7 +42,21 @@
     </div>
 
     <div class="historical">
-      <h2>Histórico</h2>
+      <div class="historical-header">
+
+        <h2>Histórico</h2>
+
+        <div class="export-options">
+          <label for="file-type">Exportar como:</label>
+          <select id="file-type">
+            <option value="txt">.txt</option>
+            <option value="csv">.csv</option>
+          </select>
+          <button id="export-button">Exportar histórico</button>
+        </div>
+
+      </div>
+
       <table id="history-table">
         <thead>
           <tr>
@@ -55,6 +70,7 @@
         </thead>
         <tbody></tbody>
       </table>
+
     </div>
 
   </div>
