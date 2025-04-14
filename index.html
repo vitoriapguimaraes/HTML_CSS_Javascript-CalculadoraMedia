@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de média</title>
   <link rel="stylesheet" href="./src/style.css">
-  <script src="./src/script.js"></script>
 </head>
 
 <body>
@@ -16,34 +15,52 @@
       <h2 class="page-subtitle">Descubra qual a sua média de nota de todas as provas!</h2>
       <p class="page-text">
         Informe seu nome e notas do bimestre para saber sua média final. <br>
-        As notas decimais devem ser escritas com ponto.
+        Use ponto no lugar da vírgula para notas decimais.<br>
+        Não se preocupe se tiver feito menos de 4 provas; a média será calculada com base apenas nas notas que você informar.
       </p>
     </div>
 
     <div class="calculator-container">
       <div class="calculator">
         <div class="input-container">
-          <input id="nome" type="text" placeholder="Nome" style="display:flex; justify-content: center">
-          <input id="valor1" type="number" placeholder="1º Nota">
-          <input id="valor2" type="number" placeholder="2º Nota">
-          <input id="valor3" type="number" placeholder="3º Nota">
-          <input id="valor4" type="number" placeholder="4º Nota">
+          <input id="name" type="text" placeholder="Nome" style="display:flex; justify-content: center">
+          <input id="grade1" type="number" placeholder="1º Nota">
+          <input id="grade2" type="number" placeholder="2º Nota">
+          <input id="grade3" type="number" placeholder="3º Nota">
+          <input id="grade4" type="number" placeholder="4º Nota">
         </div>
 
-        <button id="ok">Calcular</button>
+        <button id="ok-button">Calcular</button>
+        <button id="clear-button">Limpar valores</button>
 
-        <p id="result">Resultado</p>
+
+        <p id="result">Média aritmética</p>
       </div>
 
-      <div class="error">pop-up de possíveis erros</div>
+      <div class="error"></div>
     </div>
 
-    <div class="history">
+    <div class="historical">
       <h2>Histórico</h2>
-      <table>Nome, 1ª nota, 2ª nota, 3ª nota, 4ª nota, Média</table>
+      <table id="history-table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>1ª Nota</th>
+            <th>2ª Nota</th>
+            <th>3ª Nota</th>
+            <th>4ª Nota</th>
+            <th>Média aritmética</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
 
   </div>
+
+  <script src="./src/script.js"></script>
+
 </body>
 
 </html>
