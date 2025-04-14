@@ -13,8 +13,8 @@ html {
 
 body {
   font-family: 'Roboto Mono', monospace;
-  background: url('./assets/background-img.png') center/cover no-repeat;
-  background-size: cover;
+  background: url('./assets/background-img.jpg') center/cover no-repeat;
+  background-size: auto;
 }
 
 .page-subtitle,
@@ -23,6 +23,7 @@ body {
 }
 
 .container {
+  background-color: rgba(0, 0, 0, 0.13);
   text-align: start;
   color: white;
   width: 100%;
@@ -32,7 +33,7 @@ body {
 }
 
 .calculator-container {
-  background-color: rgba(190, 20, 20, 0.397);
+  background-color: rgba(20, 179, 190, 0.397);
   margin-top: 2rem;
   border-radius: 1rem;
 }
@@ -67,7 +68,7 @@ input::placeholder {
   text-align: center;
 }
 
-#nome {
+#name {
   width: 10rem;
 }
 
@@ -77,14 +78,20 @@ button {
   height: 3rem;
   width: 6rem;
   border-radius: 0.3rem;
-  background-color: yellow;
+  background-color: rgb(0, 238, 255);
+  cursor: pointer;
+}
+
+#clear-button {
+  background-color: lightgray;
+  color: rgb(78, 78, 78);
 }
 
 #result {
   width: 10rem;
   height: 3rem;
   background-color: black;
-  color: white;
+  color: rgb(0, 238, 255);
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -95,13 +102,39 @@ button {
 .error {
   display: flex;
   justify-content: center;
-  color: yellow;
-  padding-bottom: 1rem;
+  color: rgb(0, 238, 255);
 }
 
-.history {
+.historical {
   padding: 1rem;
   margin-top: 1rem;
   background-color: rgba(128, 128, 128, 0.445);
   border-radius: 1rem;
+}
+
+#history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#history-table th,
+#history-table td {
+  border: 1px solid gray;
+  padding: 10px;
+  text-align: center;
+}
+
+#history-table th {
+  background-color: rgba(20, 179, 190, 0.397);
+  color: white;
+}
+
+#history-table tr:nth-child(even) {
+  background-color: #f2f2f259;
+}
+
+#history-table tr:hover {
+  background-color: black;
 }
