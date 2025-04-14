@@ -1,55 +1,53 @@
-# Calculadora de média
-A Calculadora de Média permite ao usuário inserir suas notas de cada bimestre e calcular sua média final. O objetivo é oferecer uma maneira simples e intuitiva de calcular a média das notas de um aluno, utilizando conceitos básicos de programação como variáveis e operações aritméticas. Este projeto também proporciona uma experiência prática com JavaScript para manipulação de dados de entrada e exibição de resultados ao usuário.
+# Calculadora de Média Aritmética
+> Uma aplicação web que permite calcular a média aritmética das notas de um aluno de forma simples e intuitiva.
 
-## Demonstração/Visualização
-A aplicação exibe popups que solicitam ao usuário o seu nome e as notas de cada bimestre. Após a inserção das notas, a média final é calculada e apresentada ao usuário, com a possibilidade de reiniciar o processo. A interação ocorre de forma fluida, com uma interface simples e clara para facilitar o uso.
+A Calculadora de Média Aritmética oferece uma maneira fácil de inserir as notas bimestrais e obter a média final, utilizando conceitos fundamentais de JavaScript para manipulação de dados e exibição dos resultados.
 
-![Telas do sistema](https://github.com/vitoriapguimaraes/portfolio-web-Java/blob/master/HTML_CSS_Java-CalculadoraMedia/display-CalculadoraMedia.png)
+<a href="https://vitoriapguimaraes.github.io/HTML_CSS_Javascript-CalculadoraMedia/"><img src="https://img.shields.io/badge/-Calculadora%20de%20Média-000000?style=for-square" alt="HTML_CSS_Javascript-CalculadoraMedia">
 
-## Principais Tecnologias Utilizadas
-- HTML5: Estrutura básica da interface, com campos para exibição do título, instruções e entradas do usuário.
-- CSS3: Estilização simples e moderna, com um fundo personalizado e fontes de fácil leitura.
-- JavaScript: Lógica para registrar o nome do usuário, coletar as notas, calcular a média e exibi-la ao usuário.
+![Tela do sistema](https://vitoriapguimaraes.github.io/HTML_CSS_Javascript-CaboDeGuerra/results/calculate.gif)
 
-## Estrutura do Projeto
-```
-/calculadora-de-media
-│
-├── /src
-│   └── index.html             # Arquivo principal que contém a estrutura HTML
-│   └── script.js              # Lógica JavaScript para interações e cálculos
-│   └── style.css              # Arquivo de estilo do projeto
-│
-└── README.md                  # Este arquivo README com instruções e detalhes do projeto
-```
+## Tecnologias Utilizadas
+
+* HTML5
+* CSS3
+* JavaScript
 
 ## Como Executar
-1. Clone o repositório:
-    ```
-    git clone https://github.com/vitoriapguimaraes/portfolio-web-Java/tree/master/HTML_CSS_Java-CalculadoraMedia
-    ```
 
-2. Abra o arquivo index.html no seu navegador para visualizar a página e interagir com a calculadora.
+1.  Clone o repositório.
+2.  Abra o arquivo `index.html` no seu navegador.
 
-Não é necessário instalar dependências adicionais, pois o projeto depende apenas de HTML, CSS e JavaScript que são executados diretamente no navegador.
+## Como Usar
 
-## Funcionalidades
-- Registro do nome do usuário: O projeto solicita ao usuário que insira seu nome no início.
-- Entrada das notas: O usuário insere as notas de cada bimestre em popups interativos.
-- Cálculo da média: As notas inseridas são somadas e divididas por quatro para calcular a média final.
-- Reinício do processo: Após calcular a média, o usuário pode reiniciar o processo para inserir novas notas.
+1.  Insira o nome do aluno no campo "Nome".
+2.  Digite as notas de cada bimestre nos campos correspondentes (1º Nota, 2º Nota, 3º Nota, 4º Nota). Utilize ponto para casas decimais.
+3.  Clique no botão "Calcular" para obter a média aritmética.
+4.  O resultado será exibido na tela.
+5.  Clique em "Limpar valores" para apagar os valores inseridos.
+6.  O histórico de cálculos é armazenado na tabela abaixo, com opção de exportar para .txt ou .csv.
 
-## Resultados e Conclusões
-Este projeto permite que os usuários calculem facilmente a média das suas notas. O cálculo é feito com base nas notas inseridas em uma interface simples, e a média é exibida com precisão de duas casas decimais. O código serve como uma boa introdução aos conceitos de manipulação de dados e interação com o usuário usando JavaScript.
+### Funcionalidades Principais:
+- Calcula a média aritmética considerando a quantidade de notas inseridas.
+- Validação de campos para garantir a entrada de dados correta.
+- Histórico de cálculos com opção de exportar os dados.
+
+## Estrutura de Diretórios
+/CalculadoraMedia
+  ├── index.html
+  ├── src
+  │   ├── assets/background-img.png
+  │   ├── styles.css
+  │   └── script.js
+  ├── results/                          # Software print and gif
+  └── README.md
 
 ## Próximos Passos/Melhorias
-- Validação de entrada: Melhorar a validação de entradas para garantir que o usuário insira apenas números válidos.
-- Exibição de gráficos: Adicionar gráficos para uma visualização mais interativa dos resultados, como gráfico de barras ou linhas.
-- Armazenamento de dados: Implementar um sistema de armazenamento para guardar os resultados anteriores e permitir que o usuário veja o histórico de suas médias.
+> Finalizado primeira etapa.
+Melhorias a serem incluídas:
+- Implementar validações em tempo real dos campos de entrada.
+- Adicionar mais opções de exportação do histórico.
+- Melhorias de acessibilidade na interface.
 
-<br>
-<hr> 
-
-### Currículos e Documentos
-Acesse os arquivos disponíveis na pasta 
-[![Documentos](https://img.shields.io/badge/DOCUMENTOS-%F0%9F%93%83-blue?style=flat-square)](https://github.com/vitoriapguimaraes/vitoriapguimaraes/tree/main/DOCUMENTOS) para mais informações sobre minhas qualificações e certificações.
+## Mais Sobre Mim
+Acesse os arquivos disponíveis na [Pasta Documentos](https://github.com/vitoriapguimaraes/vitoriapguimaraes/tree/main/DOCUMENTOS) para mais informações sobre minhas qualificações e certificações. [cite: 27]

@@ -15,6 +15,7 @@ body {
   font-family: 'Roboto Mono', monospace;
   background: url('./assets/background-img.jpg') center/cover no-repeat;
   background-size: auto;
+  background-color: black;
 }
 
 .page-subtitle,
