@@ -112,6 +112,29 @@ button {
   border-radius: 1rem;
 }
 
+.historical-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#export-button {
+  background-color: lightgray;
+  color: rgb(78, 78, 78);
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0%;
+}
+
+select {
+  border: none;
+  transform: none;
+  color: rgb(78, 78, 78);
+  background-color: lightgray;
+  height: 1.5rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
 #history-table {
   width: 100%;
   border-collapse: collapse;

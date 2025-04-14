@@ -112,3 +112,46 @@ function clearValue() {
 document.getElementById("ok-button").addEventListener("click", calculateMedia);
 
 document.getElementById("clear-button").addEventListener("click", clearValue);
+
+function exportHistory() {
+    const table = document.getElementById("history-table").getElementsByTagName("tbody")[0];
+    const rows = table.getElementsByTagName("tr");
+    const fileType = document.getElementById("file-type").value;
+  
+    if (rows.length === 0) {
+      showError("Nenhum histórico para exportar.");
+      return;
+    }
+  
+    const isCSV = fileType === "csv";
+    const separator = isCSV ? "," : "\t";
+    const lineBreak = "\n";
+  
+    let content = `Nome${separator}Nota 1${separator}Nota 2${separator}Nota 3${separator}Nota 4${separator}Média${lineBreak}`;
+  
+    for (let row of rows) {
+      const cells = row.getElementsByTagName("td");
+      const rowData = Array.from(cells)
+        .map(cell => {
+          const text = cell.textContent;
+          return isCSV && text.includes(",") ? `"${text}"` : text; // CSV-safe
+        })
+        .join(separator);
+      content += rowData + lineBreak;
+    }
+  
+    const mimeType = isCSV ? "text/csv" : "text/plain";
+    const extension = isCSV ? "csv" : "txt";
+    const blob = new Blob([content], { type: `${mimeType};charset=utf-8` });
+    const url = URL.createObjectURL(blob);
+  
+    const downloadLink = document.createElement("a");
+    downloadLink.href = url;
+    downloadLink.download = `historico_de_notas.${extension}`;
+    downloadLink.click();
+  
+    URL.revokeObjectURL(url);
+  }
+ 
+
+document.getElementById("export-button").addEventListener("click", exportHistory);
