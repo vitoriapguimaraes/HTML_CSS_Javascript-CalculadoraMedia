@@ -3,23 +3,20 @@
 
 A Calculadora de Média Aritmética oferece uma maneira fácil de inserir as notas bimestrais e obter a média final, utilizando conceitos fundamentais de JavaScript para manipulação de dados e exibição dos resultados.
 
-<a href="https://vitoriapguimaraes.github.io/HTML_CSS_Javascript-CalculadoraMedia/"><img src="https://img.shields.io/badge/-Calculadora%20de%20Média-000000?style=for-square" alt="HTML_CSS_Javascript-CalculadoraMedia">
+<a href="https://vitoriapguimaraes.github.io/HTML_CSS_Javascript-CalculadoraMedia/"><img src="https://img.shields.io/badge/-Calculadora%20de%20Média-000000?style=for-the-badge" alt="HTML_CSS_Javascript-CalculadoraMedia">
 
-![Tela do sistema](https://vitoriapguimaraes.github.io/HTML_CSS_Javascript-CaboDeGuerra/results/calculate.gif)
+![Tela do sistema](https://github.com/vitoriapguimaraes/HTML_CSS_Javascript-CalculadoraMedia/blob/main/results/calculate.gif)
 
 ## Tecnologias Utilizadas
-
-* HTML5
-* CSS3
-* JavaScript
+- HTML5
+- CSS3
+- JavaScript
 
 ## Como Executar
-
 1.  Clone o repositório.
 2.  Abra o arquivo `index.html` no seu navegador.
 
 ## Como Usar
-
 1.  Insira o nome do aluno no campo "Nome".
 2.  Digite as notas de cada bimestre nos campos correspondentes (1º Nota, 2º Nota, 3º Nota, 4º Nota). Utilize ponto para casas decimais.
 3.  Clique no botão "Calcular" para obter a média aritmética.
@@ -33,6 +30,7 @@ A Calculadora de Média Aritmética oferece uma maneira fácil de inserir as not
 - Histórico de cálculos com opção de exportar os dados.
 
 ## Estrutura de Diretórios
+```
 /CalculadoraMedia
   ├── index.html
   ├── src
@@ -41,6 +39,7 @@ A Calculadora de Média Aritmética oferece uma maneira fácil de inserir as not
   │   └── script.js
   ├── results/                          # Software print and gif
   └── README.md
+```
 
 ## Próximos Passos/Melhorias
 > Finalizado primeira etapa.
@@ -50,4 +49,4 @@ Melhorias a serem incluídas:
 - Melhorias de acessibilidade na interface.
 
 ## Mais Sobre Mim
-Acesse os arquivos disponíveis na [Pasta Documentos](https://github.com/vitoriapguimaraes/vitoriapguimaraes/tree/main/DOCUMENTOS) para mais informações sobre minhas qualificações e certificações. [cite: 27]
+Acesse os arquivos disponíveis na [Pasta Documentos](https://github.com/vitoriapguimaraes/vitoriapguimaraes/tree/main/DOCUMENTOS) para mais informações sobre minhas qualificações e certificações.
