@@ -7,6 +7,11 @@ A Calculadora de Média Aritmética oferece uma maneira fácil de inserir as not
 
 ![Tela do sistema](https://github.com/vitoriapguimaraes/HTML_CSS_Javascript-CalculadoraMedia/blob/main/results/calculate.gif)
 
+## Funcionalidades Principais:
+- Calcula a média aritmética considerando a quantidade de notas inseridas.
+- Validação de campos para garantir a entrada de dados correta.
+- Histórico de cálculos com opção de exportar os dados.
+
 ## Tecnologias Utilizadas
 - HTML5
 - CSS3
@@ -24,11 +29,6 @@ A Calculadora de Média Aritmética oferece uma maneira fácil de inserir as not
 5.  Clique em "Limpar valores" para apagar os valores inseridos.
 6.  O histórico de cálculos é armazenado na tabela abaixo, com opção de exportar para .txt ou .csv.
 
-### Funcionalidades Principais:
-- Calcula a média aritmética considerando a quantidade de notas inseridas.
-- Validação de campos para garantir a entrada de dados correta.
-- Histórico de cálculos com opção de exportar os dados.
-
 ## Estrutura de Diretórios
 ```
 /CalculadoraMedia
@@ -42,11 +42,12 @@ A Calculadora de Média Aritmética oferece uma maneira fácil de inserir as not
 ```
 
 ## Próximos Passos/Melhorias
-> Finalizado primeira etapa.
-Melhorias a serem incluídas:
-- Implementar validações em tempo real dos campos de entrada.
-- Adicionar mais opções de exportação do histórico.
-- Melhorias de acessibilidade na interface.
+✅ Concluído
+
+> Melhorias que podem ser incluídas:
+> - Implementar validações em tempo real dos campos de entrada.
+> - Adicionar mais opções de exportação do histórico.
+> - Melhorias de acessibilidade na interface.
 
 ## Mais Sobre Mim
 Acesse os arquivos disponíveis na [Pasta Documentos](https://github.com/vitoriapguimaraes/vitoriapguimaraes/tree/main/DOCUMENTOS) para mais informações sobre minhas qualificações e certificações.
