@@ -134,7 +134,7 @@ function exportHistory() {
       const rowData = Array.from(cells)
         .map(cell => {
           const text = cell.textContent;
-          return isCSV && text.includes(",") ? `"${text}"` : text; // CSV-safe
+          return isCSV && text.includes(",") ? `"${text}"` : text;
         })
         .join(separator);
       content += rowData + lineBreak;
