@@ -9,39 +9,53 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="text">
-      <h1 class="page-title">Calculadora de média</h1>
-      <h2 class="page-subtitle">Descubra qual a sua média de nota de todas as provas!</h2>
-      <p class="page-text">
-        Informe seu nome e notas do bimestre para saber sua média final. <br>
-        Use ponto no lugar da vírgula para notas decimais.<br>
-        Não se preocupe se tiver feito menos de 4 provas; a média será calculada com base apenas nas notas que você
-        informar.
-      </p>
-    </div>
+  <main>
 
-    <div class="calculator-container">
-      <div class="calculator">
-        <div class="input-container">
-          <input id="name" type="text" placeholder="Nome" style="display:flex; justify-content: center">
-          <input id="grade1" type="number" placeholder="1º Nota">
-          <input id="grade2" type="number" placeholder="2º Nota">
-          <input id="grade3" type="number" placeholder="3º Nota">
-          <input id="grade4" type="number" placeholder="4º Nota">
+    <div class="structure-web">
+          
+      <header>
+        <h1 class="page-title">Calculadora de média</h1>
+        <h2 class="page-subtitle">Calcule a média de nota de todas as provas!</h2>
+        <p class="page-text">
+          > Informe seu nome e as notas do bimestre.<br>
+          > Use ponto para notas decimais.<br>
+          > Não se preocupe se tiver feito menos de 4 provas; a média será calculada com base apenas nas notas que você
+          informar.
+        </p>
+      </header>
+
+      <div class="calculator-container">
+
+        <div class="calculator">
+
+          <div class="input-container">
+
+            <input id="name" type="text" placeholder="Nome" style="display:flex; justify-content: center">
+            
+            <div class="grades-inputs">
+              <input id="grade1" type="number" placeholder="1º Nota">
+              <input id="grade2" type="number" placeholder="2º Nota">
+              <input id="grade3" type="number" placeholder="3º Nota">
+              <input id="grade4" type="number" placeholder="4º Nota">
+            </div>
+
+          </div>
+
+          <div class="buttons-container">
+            <button id="ok-button">Calcular</button>
+            <button id="clear-button">Limpar valores</button>
+          </div>
+
+          <p id="result">Média aritmética</p>
         </div>
 
-        <button id="ok-button">Calcular</button>
-        <button id="clear-button">Limpar valores</button>
-
-
-        <p id="result">Média aritmética</p>
+        <div class="error"></div>
       </div>
-
-      <div class="error"></div>
+    
     </div>
 
-    <div class="historical">
+    <div class="historical-container">
+
       <div class="historical-header">
 
         <h2>Histórico</h2>
@@ -73,7 +87,7 @@
 
     </div>
 
-  </div>
+  </main>
 
   <script src="./src/script.js"></script>
 
