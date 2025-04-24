@@ -17,94 +17,66 @@ body {
   background-color: black;
 }
 
-main {
+.page-subtitle,
+.page-text {
+  margin-top: 1rem;
+}
+
+.container {
   background-color: rgba(0, 0, 0, 0.13);
   text-align: start;
   color: white;
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  padding: 1rem;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  padding: 1.5rem;
 }
 
 .calculator-container {
   background-color: rgba(20, 179, 190, 0.397);
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1rem;
 }
 
 .calculator {
   display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
 }
 
 .input-container {
   display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  height: 3rem;
 }
 
-#name {
-  width: 100%;
+input {
   border: none;
   background-color: lightgray;
   color: black;
   font-family: 'Roboto Mono', monospace;
   border-radius: 0.3rem;
-  height: 3rem;
-}
-
-.grades-inputs {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 0.5rem;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-.grades-inputs input {
-  flex-grow: 1;
-  border: none;
-  background-color: lightgray;
-  color: black;
-  font-family: 'Roboto Mono', monospace;
-  border-radius: 0.3rem;
-  height: 3rem;
-  text-align: center;
-  max-width: calc(25% - 0.5rem);
+  width: 6rem;
 }
 
 input::placeholder {
   text-align: center;
 }
 
-.buttons-container {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  align-items: center;
+#name {
+  width: 10rem;
 }
 
 button {
   border: none;
   font-family: 'Roboto Mono', monospace;
   height: 3rem;
-  width: 100%;
+  width: 6rem;
   border-radius: 0.3rem;
   background-color: rgb(0, 238, 255);
   cursor: pointer;
@@ -116,7 +88,7 @@ button {
 }
 
 #result {
-  width: 100%;
+  width: 10rem;
   height: 3rem;
   background-color: black;
   color: rgb(0, 238, 255);
@@ -131,10 +103,9 @@ button {
   display: flex;
   justify-content: center;
   color: rgb(0, 238, 255);
-  margin-top: 0.8rem;
 }
 
-.historical-container {
+.historical {
   padding: 1rem;
   margin-top: 1rem;
   background-color: rgba(128, 128, 128, 0.445);
@@ -145,19 +116,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
-}
-
-.export-option {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.export-options label {
-  font-size: 0.9rem;
-  color: white;
 }
 
 #export-button {
@@ -178,7 +136,6 @@ select {
 }
 
 #history-table {
-  table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
@@ -187,80 +144,26 @@ select {
 
 #history-table th,
 #history-table td {
-  border: 1px solid rgba(128, 128, 128, 0.5);
+  border: 1px solid gray;
   padding: 10px;
   text-align: center;
-  font-size: 0.9rem;
-  word-wrap: break-word;
-  overflow: hidden;
 }
 
 #history-table th {
-  background-color: rgba(20, 179, 190, 0.6);
+  background-color: rgba(20, 179, 190, 0.397);
   color: white;
-  text-transform: uppercase;
-}
-
-#history-table td {
-  white-space: normal;
 }
 
 #history-table tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: #f2f2f259;
 }
 
 #history-table tr:hover {
-  background-color: rgba(0, 238, 255, 0.2);
+  background-color: black;
 }
 
 @media (min-width: 768px) {
-  .historical-container {
-    padding: 2rem;
-  }
-
-  .historical-header {
-    gap: 3rem;
-  }
-
-  #history-table th,
-  #history-table td {
-    padding: 15px;
-    font-size: 1rem;
-  }
-
-  button {
-    height: 3rem;
-  }
 }
 
 @media (min-width: 1024px) {
-
-  main {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  .structure-web {
-    max-width: 40%;
-  }
-
-  .calculator-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .historical-header {
-    justify-content: space-around;
-  }
-
-  .page-title {
-    font-size: 2.5rem;
-  }
-
-  .page-subtitle {
-    font-size: 1.5rem;
-  }
 }
